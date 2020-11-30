@@ -18,7 +18,7 @@
 #	- O&O Shutup10 CFG and Run
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
-#	- Added Confirm Menu for Adobe and Brave Browser
+#	- Added Confirm Menu for Sumatra and Brave Browser
 #	- Changed Default Apps to Notepad++, Brave, Irfanview, and more using XML Import feature
 #
 ##########
@@ -35,8 +35,9 @@ $tweaks = @(
 	"InstallNotepadplusplus",
 	"InstallIrfanview",
 	"InstallVLC",
-	"InstallAdobe",
+	"InstallSumatra",
 	"InstallBrave",
+	"InstallSteam",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
 
 	### Windows Apps
@@ -245,8 +246,8 @@ Function InstallTitusProgs {
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
 
-Function InstallAdobe {
-	Show-Choco-Menu -Title "Do you want to install Adobe Acrobat Reader?" -ChocoInstall "adobereader"
+Function InstallSumatra {
+	Show-Choco-Menu -Title "Do you want to install Sumatra PDF?" -ChocoInstall "sumatrapdf"
 }
 
 Function InstallBrave {
@@ -285,6 +286,10 @@ Function InstallVLC {
 
 Function InstallIrfanview {
 	Show-Choco-Menu -Title "Do you want to install Irfanview?" -ChocoInstall "irfanview"
+}
+
+Function InstallSteam {
+	Show-Choco-Menu -Title "Do you want to install Steam?" -ChocoInstall "steam"
 }
 
 Function ChangeDefaultApps {
