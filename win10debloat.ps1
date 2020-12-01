@@ -38,6 +38,12 @@ $tweaks = @(
 	"InstallSumatra",
 	"InstallBrave",
 	"InstallSteam",
+	"InstallDiscord",
+	"InstallMegaSync",
+	"InstallCalibre",
+	"InstallKeePassXC",
+	"InstallSyncthing",
+	"InstallExpressVPN",
 	# "ChangeDefaultApps", # Removed due to issues with steam and resetting default apps
 
 	### Windows Apps
@@ -290,6 +296,30 @@ Function InstallIrfanview {
 
 Function InstallSteam {
 	Show-Choco-Menu -Title "Do you want to install Steam?" -ChocoInstall "steam"
+}
+
+Function InstallDiscord {
+	Show-Choco-Menu -Title "Do you want to install Discord?" -ChocoInstall "discord"
+}
+
+Function InstallMegaSync {
+	Show-Choco-Menu -Title "Do you want to install MegaSync?" -ChocoInstall "megasync"
+}
+
+Function InstallCalibre {
+	Show-Choco-Menu -Title "Do you want to install Calibre?" -ChocoInstall "calibre"
+}
+
+Function InstallKeePassXC {
+	Show-Choco-Menu -Title "Do you want to install KeePassXC?" -ChocoInstall "keepassxc"
+}
+
+Function InstallSyncthing {
+	Show-Choco-Menu -Title "Do you want to install Syncthing?" -ChocoInstall "syncthing"
+}
+
+Function InstallExpressVPN {
+	Show-Choco-Menu -Title "Do you want to install ExpressVPN?" -ChocoInstall "expressvpn"
 }
 
 Function ChangeDefaultApps {
